@@ -9,6 +9,7 @@
     <style>
         table,
         tr,
+        th,
         td {
             text-align: center;
             border: 4px solid blue;
@@ -31,6 +32,14 @@
         a {
             text-decoration: none;
         }
+
+        #zone {
+            list-style-type: none;
+        }
+
+        #disc {
+            list-style-type: disc;
+        }
     </style>
     <title>Tablular forms</title>
 </head>
@@ -39,58 +48,57 @@
     <form action="">
         <table>
             <!-- First Row  -->
-            <tr>
-                <td>List with Links</td>
-                <td>Image</td>
-            </tr>
+            <div class="firstcontainer">
+                <tr>
+                    <th>List with Links</th>
+                    <th>Image</th>
+                </tr>
+            </div>
 
             <!-- second row  -->
             <tr>
                 <td>
-                    Karnali
-                    <div id="1stLink">
+                    <ul>
+                        <li id="zone">Karnali</li>
                         <ul>
-                            <li>
-                                <a href="www.bardiya.com.np">Bardiya</a>
-                            </li>
-
-                            <li>
-                                <a href="www.banke.com.np">Banke</a>
-                            </li>
-
-                            <li>
-                                <a href="www.jumla.com.np">Jumla</a>
-                            </li>
+                            <ul id="disc">
+                                <li>Bardiya</li>
+                                <li>Banke</li>
+                                <li>Jumla</li>
+                            </ul>
                         </ul>
-                    </div>
+                    </ul>
                 </td>
-                <td><img src="./th.webp" alt="water flowing in river surrounded by jungle"></td>
+
+                <td>
+                    <img src="th.webp" alt="water flowing in river surrounded by mountains">
+                </td>
             </tr>
+
 
             <!-- Third row  -->
             <tr>
                 <td>
-                    Bagmati
-                    <div id="2ndLink">
+                    <ul>
+                        <li id="zone">Bagmati</li>
                         <ul>
-                            <li>
-                                <a href="www.ktm.com.np">kathmandu</a>
-                            </li>
-
-                            <li>
-                                <a href="www.Bhatkapur.com.np">Bhaktapur</a>
-                            </li>
-
-                            <li>
-                                <a href="www.laltiput.com.np">Lalitput</a>
-                            </li>
+                            <ul id="disc">
+                                <li>Ktm</li>
+                                <li>Bhaktapur</li>
+                                <li>Lalitput</li>
+                            </ul>
                         </ul>
-                    </div>
+                    </ul>
                 </td>
-                <td><img src="./th.webp" alt="water flowing in river surrounded by jungle"></td>
+
+                <td>
+                    <img src="th.webp" alt="water flowing in river surrounded by mountains">
+                </td>
             </tr>
         </table>
     </form>
+
+    <a href="www.google.com" title="google's way">Go to google</a>
 </body>
 
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(179, 176, 176);
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+    </style>
+    <title>Table design</title>
+</head>
+
+<body>
+    <p>Table that contains the data fields like <strong>roll</strong>,
+        <strong>num</strong>,
+        <strong>name</strong>,
+        <strong>subjects</strong>
+    </p>
+
+    <!-- Table starts  -->
+    <table border="2px solid black">
+        <!-- First row  -->
+        <tr>
+            <th rowspan="2">Roll no: </th>
+            <th rowspan="2">Name</th>
+            <th colspan="4">Subjects</th>
+        </tr>
+
+        <!-- second row  -->
+        <tr>
+            <td>C</td>
+            <td>Web</td>
+            <td>Math</td>
+            <td>C++</td>
+        </tr>
+
+        <!-- third row  -->
+        <tr>
+            <td>1</td>
+            <td>Abhishek</td>
+            <td>50</td>
+            <td>45</td>
+            <td>60</td>
+            <td>70</td>
+        </tr>
+
+        <!-- Fourth row  -->
+        <tr>
+            <td>2</td>
+            <td>Suresh</td>
+            <td>50</td>
+            <td>45</td>
+            <td>46</td>
+            <td>NQ</td>
+        </tr>
+
+        <!-- Fifth row  -->
+        <tr>
+            <td>3</td>
+            <td>Yodhim</td>
+            <td>80</td>
+            <td>85</td>
+            <td>90</td>
+            <td>75</td>
+        </tr>
+
+        <!-- last row  -->
+        <tr>
+            <td colspan="6">Contact to department if Not Qualified(NQ)</td>
+        </tr>
+    </table>
+</body>
+
+</html>
