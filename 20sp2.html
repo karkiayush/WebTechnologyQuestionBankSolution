@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <style>
+        /* top css prop get higher priority  */
+        #about p.element-2 {
+            color: red;
+        }
+
+        .about p.element-2 {
+            color: black;
+        }
+
+        #about p {
+            color: blue;
+        }
+
+        .about p {
+            color: yellow;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+    <title>testing</title>
+</head>
+
+<body>
+    <div class="about" id="about">
+        <p class="element-2">All right deserved
+        </p>
+
+        <p id="element-2">
+            I love web tech
+        </p>
+    </div>
+</body>
+
+</html>
