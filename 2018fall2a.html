@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with form</title>
+</head>
+
+<body>
+    <table border="2px solid black">
+        <form action="">
+            <!-- first row  -->
+            <tr>
+                <th colspan="2">Fill the form below</th>
+            </tr>
+
+            <!-- second row  -->
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name">
+                </td>
+            </tr>
+
+            <!-- third row  -->
+            <tr>
+                <td>
+                    <label for="password">Password: </label>
+                </td>
+                <td>
+                    <input type="text" id="password">
+                </td>
+            </tr>
+
+            <!-- fourth row  -->
+            <tr>
+                <td>
+                    <label for="feedback">Feedback:</label>
+                </td>
+
+                <td>
+                    <textarea name="" id="feedback" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+
+            <!-- fifth row  -->
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- sixth row -->
+            <tr>
+                <td>Subject</td>
+                <td>
+                    <input type="checkbox" id="web">
+                    <label for="web">Web</label>
+
+                    <input type="checkbox" id="Math">
+                    <label for="Math">Math</label>
+
+                    <input type="checkbox" id="Graphics">
+                    <label for="Graphics">Garpics</label>
+
+                    <input type="checkbox" id="english">
+                    <label for="english">English</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button value="reset">Reset All</button>
+
+                    <button value="submission">Submit Above Details</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
