@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        user input validation using js
+    </title>
+
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("username");
+
+            var email = document.getElementById("email");
+
+            var contactnum = document.getElementById("mobilenum");
+
+
+            // For the blank input 
+            if (username.value.trim() == "" || email.value.trim() == "" || contactnum.value.trim() == "") {
+                alert("No blank value is allowed");
+                return false;
+            }
+
+
+            // For incorrect input 
+            else {
+                var nameregex = /^([a-zA-z]*) $/
+
+                if (nameregex.test(username.value)) {
+                    alert("name is valid");
+                }
+
+                else {
+                    alert("name is invalid");
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="message.html" onsubmit="return validate()">
+
+        Name: <input type="text" name="username" id="username">
+
+        Email: <input type="email" name="email" id="email">
+
+        Contact no: <input type="number" name="mobilenum" id="mobilenum">
+
+        <input type="submit" name="login" value="login">
+    </form>
+</body>
+
+</html>

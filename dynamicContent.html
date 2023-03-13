@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Content Example</title>
+</head>
+
+<body>
+    <button id="myButton">Click me</button>
+    <p id="myParagraph"></p>
+    <script>
+        // Get the button and paragraph elements
+        const button = document.getElementById("myButton");
+        const paragraph = document.getElementById("myParagraph");
+
+        // Add an event listener to the button
+        button.addEventListener("click", function () {
+            // Change the text of the paragraph element
+            paragraph.textContent = "Hello, world!";
+        });
+
+    </script>
+</body>
+
+</html>
