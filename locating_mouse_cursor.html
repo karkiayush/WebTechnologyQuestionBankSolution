@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Cursor and Clicks Example</title>
+    <style>
+        #cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: pink;
+            display: none;
+            /* Set z-index to ensure it appears on top of other elements */
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mouse Cursor and Clicks Example</h1>
+    <p>Move your mouse around the page and click to see the coordinates of the mouse cursor.</p>
+
+    <!-- This element will represent the mouse cursor -->
+    <div id="cursor"></div>
+
+    <script>
+        // Get a reference to the cursor element
+        var cursor = document.getElementById("cursor");
+
+        // Add an event listener to the document to track mouse movement
+        document.addEventListener("mousemove", function (event) {
+            // Update the position of the cursor element to match the mouse position
+            cursor.style.left = event.pageX + "px";
+            cursor.style.top = event.pageY + "px";
+            // Display the cursor element
+            cursor.style.display = "block";
+        });
+
+        // Add an event listener to the document to track mouse clicks
+        document.addEventListener("click", function (event) {
+            // Display an alert box with the coordinates of the mouse click
+            alert("Mouse clicked at X:" + event.pageX + " Y:" + event.pageY);
+        });
+    </script>
+</body>
+
+</html>

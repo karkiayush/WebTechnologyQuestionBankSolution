@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation using javascript</title>
+</head>
+
+<body>
+    <!-- Making simple form  -->
+    <form action="/." method="post">
+        <label for="UserName">Name:</label>
+        <input type="text" name="name" id="UserName"><br><br>
+        <label for="UserEmail">Email:</label>
+        <input type="email" name="email" id="UserEmail"><br><br>
+        <label for="UserNumber">Contact no:</label>
+        <input type="number" name="number" id="UserNumber"><br><br>
+        Gender:
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br><br>
+        <input type="button" onclick="formValidation()" value="Submit">
+    </form>
+
+    <!-- JS logic  -->
+    <script type="text/javascript">
+        function formValidation() {
+            const Uname = document.getElementById("UserName").value;
+            const Uemail = document.getElementById("UserEmail").value;
+            const UNumber = document.getElementById("UserNumber").value;
+
+            // Name validation or check
+
+            /*here ^ specifies that starting of the name must be with alphabet*/
+            const NameRegex = /^[A-z a-z]+[a-zA-z]$/;
+            if (NameRegex.test(Uname)) {
+                alert("Valid name input");
+            }
+            else {
+                alert("Invalid name input");
+            }
+            // Email validation or check
+            const emailRegex = /[A-z a-z 0-9 \-_\.]+[@][a-z]+[\.][a-z]{2,3}/;
+            if (emailRegex.test(Uemail)) {
+                alert("Valid email input");
+            }
+            else {
+                alert("Invalid email input");
+            }
+            // Number validation or check
+            const NumberRegex = /[9][8 7][0-9]{8}/;
+            if (NumberRegex.test(UNumber)) {
+                alert("valid user input of a number");
+            }
+            else {
+                alert("Please insert the valid number as per the rule of regular expressions");
+            }
+
+            // // Radio Buttons Check or validation
+            // var male = document.getElementById("male").checked;
+            // var female = document.getElementById("female").checked;
+            // if (male == false && female == false) {
+
+            //     alert("Gender needs to be selected");
+            // }
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
