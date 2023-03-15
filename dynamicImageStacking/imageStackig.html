@@ -11,7 +11,7 @@
         width: 300px;
     }
 
-    image {
+    images {
         position: absolute;
         top: 0;
         left: 0;
@@ -19,9 +19,10 @@
         width: 100px;
         object-fit: cover;
     }
-    images{
+
+    images {
         height: 30px;
-        
+
     }
 </style>
 
@@ -31,6 +32,7 @@
     <script type="text/javascript">
         // get reference to the image container
         const container = document.getElementById("img-container");
+        
         // create an array of image sources
         const images = ["img1.jpg", "img2.jpg", "img3.jpg"];
 
@@ -38,12 +40,13 @@
 
         for (let i = 0; i < images.length; i++) {
 
-            const img=document.createElement("img");
-            img.src=images[i];
+            const img = document.createElement("img");
+            img.src = images[i];
             img.classList.add("image");
 
             // set the z index of image based on its position in the array
-            img.style.zIndex=images.length-i;
+            img.style.zIndex = images.length - i;
+
             // add image to the container
             container.appendChild(img);
         }
